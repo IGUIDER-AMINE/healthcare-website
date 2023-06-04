@@ -1,7 +1,7 @@
 import React from "react";
 
-const careCondition = () => {
+const CareCondition = () => {
   return <div>careCondition</div>;
 };
 
-export default careCondition;
+export default CareCondition;

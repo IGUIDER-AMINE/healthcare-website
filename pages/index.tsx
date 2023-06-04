@@ -1,4 +1,11 @@
+import CareCondition from "@/components/CareCondition";
+import ClientQsts from "@/components/ClientQsts";
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
+import OurApp from "@/components/OurApp";
+import OurDoctors from "@/components/OurDoctors";
+import OurFeatures from "@/components/OurFeatures";
+import Testimonials from "@/components/Testimonials";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,35 +17,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
       </Head>
-      <main className="w-full text-[16px] h-screen font-bodyFont bg-white text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+      <main className="w-full bodyFont h-screen flex flex-col justify-between text-[16px] font-bodyFont bg-white text-textLight">
+        {/* <main className="w-full container mx-auto text-[16px] h-screen font-bodyFont bg-white text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"> */}
         <NavBar />
-        <div>s</div>
-        <div>s</div>
-        <div>s</div> <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div> <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
-        <div>s</div>
+        <OurFeatures />
+        <OurDoctors />
+        <CareCondition />
+        <ClientQsts />
+        <Testimonials />
+        <OurApp />
+        <Footer />
       </main>
     </>
   );
