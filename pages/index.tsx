@@ -1,4 +1,4 @@
-import CareCondition from "@/components/CareCondition";
+import Care from "@/components/Care";
 import ClientQsts from "@/components/ClientQsts";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
@@ -22,7 +22,7 @@ export default function Home() {
         <NavBar />
         <OurFeatures />
         <OurDoctors />
-        <CareCondition />
+        <Care />
         <ClientQsts />
         <Testimonials />
         <OurApp />
