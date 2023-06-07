@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <section
       style={scroll ? { background: "#0A192F" } : { background: "none" }}
-      className="w-full text-white h-20 lg:h-[12vh] sticky top-0"
+      className="w-full text-white h-20 z-10 lg:h-[12vh] sticky top-0"
     >
       <div className="w-full text-white container px-9 mx-auto h-20 lg:h-[12vh]">
         <div className="h-full py-1 font-titleFont flex items-center justify-between">
