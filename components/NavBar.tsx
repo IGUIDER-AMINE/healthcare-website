@@ -1,21 +1,42 @@
-import React from "react";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
+  const [scroll, setScroll] = useState(0);
+  const [scrollChnageButton, setScrollChangeButton] = useState(0);
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY > 100;
+      const scrollCheckButton = window.scrollY > 600;
+
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck);
+      }
+
+      if (scrollCheckButton !== scrollChnageButton) {
+        setScrollChangeButton(scrollCheckButton);
+      }
+    });
+  });
   return (
-    <section className="w-full text-white container px-9 mx-auto h-20 lg:h-[12vh] sticky top-0 z-50">
-      <div className="h-full py-1 font-titleFont flex items-center justify-between">
-        <div className="text-3xl">Pharmadi</div>
-        <div>
-          <ul className="hidden gap-6 text-1xl md:flex">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Find Doctor</li>
-          </ul>
+    <section
+      style={scroll ? { background: "#0A192F" } : { background: "none" }}
+      className="w-full text-white h-20 lg:h-[12vh] sticky top-0"
+    >
+      <div className="w-full text-white container px-9 mx-auto h-20 lg:h-[12vh]">
+        <div className="h-full py-1 font-titleFont flex items-center justify-between">
+          <div className="text-3xl">Pharmadi</div>
+          <div>
+            <ul className="hidden gap-6 text-1xl md:flex">
+              <li>Home</li>
+              <li>Services</li>
+              <li>About Us</li>
+              <li>Find Doctor</li>
+            </ul>
+          </div>
+          <button className="rounded-full text-1xl bg-blue-600/90 px-8 py-2">
+            Login
+          </button>
         </div>
-        <button className="rounded-full text-1xl bg-blue-600/90 px-8 py-2">
-          Login
-        </button>
       </div>
     </section>
   );
