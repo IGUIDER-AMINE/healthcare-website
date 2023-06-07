@@ -4,7 +4,7 @@ import React from "react";
 
 const OurApp = () => {
   return (
-    <section id="ourApp" className="container mx-auto">
+    <section id="ourApp" className="container mx-auto px-9">
       <div className="bg-cyan-500 flex rounded-3xl h-[178px]">
         <div className="flex-1 grid space-y-5 place-content-center flex-col">
           <h1 className="text-[30px] font-bold">

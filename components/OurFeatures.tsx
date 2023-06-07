@@ -1,7 +1,7 @@
 import React from "react";
 
 const OurFeatures = () => {
-  return <div>OurFeatures</div>;
+  return <section className="container mx-auto  px-9">OurFeatures</section>;
 };
 
 export default OurFeatures;
