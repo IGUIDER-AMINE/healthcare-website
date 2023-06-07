@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
-  const [scroll, setScroll] = useState(0);
-  const [scrollChnageButton, setScrollChangeButton] = useState(0);
+  const [scroll, setScroll] = useState<boolean>(false);
+  const [scrollChangeButton, setScrollChangeButton] = useState<boolean>(false);
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 100;
@@ -12,7 +13,7 @@ const NavBar = () => {
         setScroll(scrollCheck);
       }
 
-      if (scrollCheckButton !== scrollChnageButton) {
+      if (scrollCheckButton !== scrollChangeButton) {
         setScrollChangeButton(scrollCheckButton);
       }
     });
