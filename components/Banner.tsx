@@ -42,12 +42,12 @@ const Banner = () => {
     >
       <NavBar />
       <div className="container grid gap-12 mx-auto px-9">
-        <div className="flex">
+        <div className="flex  flex-col md:flex-row">
           <div className="space-y-10 text-white flex-1">
-            <h1 className="text-8xl font-bold">
+            <h1 className="text-[30px] md:text-8xl font-bold">
               The future <br /> of health
             </h1>
-            <p className="text-lg">
+            <p className="text-lg max-w-full">
               Tremendous potential for advancements in personalized medcine,
               digital health, preventive care, integrated healthcare, and
               improved patient outocomes.
