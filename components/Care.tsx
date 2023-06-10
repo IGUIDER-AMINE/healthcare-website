@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Care = () => {
@@ -11,7 +12,7 @@ const Care = () => {
       <div className="space-y-2">
         <div className="flex h-[120px] gap-4">
           <div
-            style={{ backgroundImage: `url('./images/bannerthree.jpg')` }}
+            style={{ backgroundImage: `url('./images/bgone.jpg')` }}
             className="w-[40%] px-2 space-y-2 space-x-2 flex-warp box-border bg-cyan-700 rounded-lg bg-cover bg-no-repeat"
           >
             <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
@@ -59,7 +60,24 @@ const Care = () => {
               Get discount
             </button>
           </div>
-          <div className="w-[50%] bg-red-50 rounded-3xl">3</div>
+          <div className="w-[50%] bg-gray-200/50 relative rounded-3xl">
+            <div>
+              <Image
+                alt=""
+                src="/images/doctors/doctrorseven.jpg"
+                className="absolute bottom-0"
+                width={200}
+                height={200}
+              />
+            </div>
+            <div className="absolute top-[30%] left-[40%]">
+              <q className="font-bold text-slate-900">
+                Stand up to the sick as you would have them stand up to you in
+                the hour of lilness.
+              </q>
+              <div className="text-gray-300">Cheyenne Calzoni</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
