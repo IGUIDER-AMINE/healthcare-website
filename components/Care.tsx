@@ -8,8 +8,8 @@ const Care = () => {
           We care about you condition
         </h1>
       </div>
-      <div>
-        <div className="flex h-[120px] gap-2">
+      <div className="space-y-2">
+        <div className="flex h-[120px] gap-4">
           <div
             style={{ backgroundImage: `url('./images/bannerthree.jpg')` }}
             className="w-[40%] px-2 space-y-2 space-x-2 flex-warp box-border bg-cyan-700 rounded-lg bg-cover bg-no-repeat"
@@ -18,16 +18,16 @@ const Care = () => {
               General
             </button>
             <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
-              General
+              Surgery
             </button>
             <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
-              General
+              Diagnosis
             </button>
             <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
-              General
+              Therapy
             </button>
             <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
-              General
+              Health
             </button>
           </div>
           <div
@@ -38,6 +38,28 @@ const Care = () => {
               #WeCareAboutYou
             </h1>
           </div>
+        </div>
+        <div className="flex min-h-[130px] justify-between gap-4">
+          <div className="flex flex-col justify-between gap-5 p-10 text-white w-[25%] bg-blue-400 rounded-3xl">
+            <div className="text-5xl font-medium">50%</div>
+            <p className="text-[14px] text-gray-200">
+              Take a discount for a child under 6 years of age, for first
+              examination
+            </p>
+            <button className="font-bold text-slate-900 border bg-gray-50 rounded-full w-full py-2">
+              Get discount
+            </button>
+          </div>
+          <div className="flex flex-col justify-between gap-5 p-10 text-white w-[25%] bg-green-400 rounded-3xl">
+            <div className="text-5xl font-medium">25%</div>
+            <p className="text-[14px] text-gray-200">
+              Take a discount for the first visit of an our services
+            </p>
+            <button className="font-bold text-slate-900 border bg-gray-50 rounded-full w-full py-2">
+              Get discount
+            </button>
+          </div>
+          <div className="w-[50%] bg-red-50 rounded-3xl">3</div>
         </div>
       </div>
     </section>
