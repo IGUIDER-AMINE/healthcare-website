@@ -5,10 +5,10 @@ import React from "react";
 const OurApp = () => {
   return (
     <section id="ourApp" className="container mx-auto px-9">
-      <div className="bg-cyan-500 flex rounded-3xl h-[178px]">
-        <div className="flex-1 grid space-y-5 place-content-center flex-col">
-          <h1 className="text-[30px] font-bold">
-            Trust us, it will all look much easier
+      <div className="bg-cyan-500 flex rounded-3xl h-[300px]">
+        <div className="flex-1 pl-24 grid space-y-5 place-content-center justify-start flex-col">
+          <h1 className="text-5xl text-white font-titleFont font-bold">
+            Trust us, it will all <br /> look much easier
           </h1>
           <div className="flex gap-5">
             <div>
@@ -35,9 +35,9 @@ const OurApp = () => {
           <Image
             src={ourApp}
             alt="out-app"
-            className="object-contain h-full absolute bottom-0 right-0"
-            width={200}
-            height={100}
+            className="object-contain h-full absolute bottom-0 right-[-10px]"
+            width={400}
+            height={300}
           />
         </div>
       </div>

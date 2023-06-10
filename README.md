@@ -54,3 +54,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 https://healthcare-website-sand.vercel.app/
 
 <!-- npx create-next-app@latest --typescript ./ -->
+<!-- https://www.remove.bg/fr/upload -->
