@@ -40,7 +40,7 @@ const Care = () => {
             </h1>
           </div>
         </div>
-        <div className="flex min-h-[130px] justify-between gap-4">
+        <div className="flex box-border justify-between gap-4">
           <div className="flex flex-col justify-between gap-5 p-10 text-white w-[25%] bg-blue-400 rounded-3xl">
             <div className="text-5xl font-medium">50%</div>
             <p className="text-[14px] text-gray-200">
@@ -64,10 +64,10 @@ const Care = () => {
             <div>
               <Image
                 alt=""
-                src="/images/doctors/doctrorseven.jpg"
-                className="absolute bottom-0"
+                src="/images/doctors/doctrorsix-removebgpng.png"
+                className="absolute bottom-0 object-cover h-full"
                 width={200}
-                height={200}
+                height={500}
               />
             </div>
             <div className="absolute top-[30%] left-[40%]">
