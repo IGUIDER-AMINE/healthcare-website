@@ -4,17 +4,7 @@ import appleStore from "./images/appleStore.svg";
 import googlePlay from "./images/googlePlay.svg";
 import ourApp from "./images/ourAppone.png";
 import diagnostic from "./images/diagnostic.png";
-import doctorone from "./images/doctors/doctorone.png";
 import star from "./images/svg/star.svg";
 import phoneImg from "./images/svg/phone.svg";
 
-export {
-  banner,
-  appleStore,
-  googlePlay,
-  ourApp,
-  diagnostic,
-  doctorone,
-  star,
-  phoneImg,
-};
+export { banner, appleStore, googlePlay, ourApp, diagnostic, star, phoneImg };

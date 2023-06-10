@@ -1,26 +1,28 @@
 import React, { useState } from "react";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+SwiperCore.use([Autoplay, Navigation]);
+
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { doctorone, phoneImg, star } from "@/public";
+import { phoneImg, star } from "@/public";
 import { doctors_info } from "@/util/data";
 
 const OurDoctors = () => {
   const [option, setOption] = useState<number>(0);
   const styleOne =
-    "rounded-full shadow-sm text-white text-1xl font-medium bg-blue-600/90 px-8 py-3";
+    "rounded-full shadow-sm flex-1 text-white text-1xl font-medium bg-blue-600/90 px-8 py-3";
   const styleTwo =
-    "rounded-full shadow-sm text-1xl font-medium border px-8 py-3";
+    "rounded-full shadow-sm flex-1 text-1xl font-medium border px-8 py-3";
 
   return (
     <section className="container mx-auto text-slate-900 px-9">
       <div className="flex flex-col gap-6 place-items-center">
-        <h1 className="text-5xl font-bold font-titleFont">
+        <h1 className="text-3xl text-sm-5xl font-bold font-titleFont">
           Our dedicated doctors
         </h1>
-        <div className="space-x-4">
+        <div className="flex gap-2 flex-wrap">
           <button
             onClick={() => setOption(0)}
             className={option == 0 ? styleOne : styleTwo}
@@ -46,7 +48,7 @@ const OurDoctors = () => {
             Heart
           </button>
         </div>
-        <div className="grid max-w-containerSmall min-w-[1024px]">
+        <div className="max-w-containerSmall min-w-[1024px]">
           <Swiper
             slidesPerView={4}
             spaceBetween={30}
@@ -71,6 +73,8 @@ const OurDoctors = () => {
                 slidesPerView: 4,
               },
             }}
+            pagination={true}
+            modules={[Pagination]}
           >
             {doctors_info?.map((item, i) => {
               return (
@@ -82,14 +86,14 @@ const OurDoctors = () => {
                         src={item?.image}
                         height={200}
                         width={200}
-                        className="object-cover w-full rounded-t-lg"
+                        className="object-scale-down max-h-[200px] w-full rounded-t-lg"
                       />
                     </div>
                     <div>
                       <div className="text-slate-900 font-medium">
                         dr. {item?.name}
                       </div>
-                      <div className="flex justify-between">
+                      <div className="flex gap-6 text-[14px]">
                         <div className="flex gap-2">
                           <Image
                             alt="doctor"
