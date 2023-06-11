@@ -1,4 +1,4 @@
-import { banner, diagnostic } from "@/public";
+import { consultaionImg, diagnostic, opthalmologyImg } from "@/public";
 import Image from "next/image";
 import React from "react";
 
@@ -22,30 +22,50 @@ const OurFeatures = () => {
       </div>
       <div className="grid grid-rows-3 md:grid-rows-1 gap-3 grid-flow-col justify-between">
         <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
-          <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
+          <Image
+            src={diagnostic}
+            alt="Diagnostic Examination"
+            className="object-scale-down h-full"
+            width={100}
+            height={200}
+          />
           <h2 className="md:text-[22px] font-bold font-titleFont">
             Diagnostic Examination
           </h2>
           <p className="text-center">
-            Depending on the specific health concern being evaluated
+            Depending on the specific health concern being evaluated.
           </p>
         </div>
         <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
-          <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
+          <Image
+            src={opthalmologyImg}
+            alt="Children's Opthalmology"
+            className="object-scale-down h-full"
+            width={100}
+            height={200}
+          />
           <h2 className="md:text-[22px] font-bold font-titleFont">
-            Diagnostic Examination
+            Children&apos;s Opthalmology
           </h2>
           <p className="text-center">
-            Depending on the specific health concern being evaluated
+            Focuses on the diagnosis, treatment, and vision problems in
+            children.
           </p>
         </div>
         <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
-          <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
+          <Image
+            src={consultaionImg}
+            alt="Consultation"
+            className="object-scale-down h-full"
+            width={100}
+            height={200}
+          />
           <h2 className="md:text-[22px] font-bold font-titleFont">
-            Diagnostic Examination
+            Consultation
           </h2>
           <p className="text-center">
-            Depending on the specific health concern being evaluated
+            In a consultation, the healthcare provider assesses the person
+            health and creates a treatment plan?
           </p>
         </div>
       </div>
