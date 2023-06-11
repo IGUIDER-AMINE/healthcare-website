@@ -31,7 +31,7 @@ const OurApp = () => {
             </div>
           </div>
         </div>
-        <div className="flex-none md:flex-1 grid place-content-center relative">
+        <div className="flex-none md:flex-1 grid overflow-hidden place-content-center relative">
           <Image
             src={ourApp}
             alt="out-app"
