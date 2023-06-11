@@ -37,17 +37,17 @@ const Banner = () => {
   return (
     <section
       id="banner"
-      className="grid relative gap-20 pb-8 bg-cover bg-no-repeat origin-right "
+      className="grid relative gap-16 pb-8 bg-cover bg-no-repeat origin-right "
       style={{ backgroundImage: `url('./images/bannerthree.jpg')` }}
     >
       <NavBar />
-      <div className="container grid gap-12 mx-auto px-9">
-        <div className="flex  flex-col md:flex-row">
-          <div className="space-y-10 text-white flex-1">
-            <h1 className="text-[30px] md:text-8xl font-bold">
-              The future <br /> of health
+      <div className="container mx-auto px-9">
+        <div className="grid gap-4 grid-rows-2 lg:grid-rows-1 grid-flow-col grid-cols-2 md:flex-row">
+          <div className="col-span-2 space-y-6 md:space-y-10 text-white flex-1">
+            <h1 className="font-titleFont md:text-[50px] lg:text-8xl text-[30px] font-bold">
+              The future of health
             </h1>
-            <p className="text-lg max-w-full">
+            <p className="text-lg max-w-[425px]">
               Tremendous potential for advancements in personalized medcine,
               digital health, preventive care, integrated healthcare, and
               improved patient outocomes.
@@ -73,15 +73,15 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1">
-            <div className="rounded-3xl max-w-[80%] mx-auto bg-white overflow-hidden shadow-lg p-6 h-full text-center space-y-5">
-              <h1 className="text-4xl text-slate-900 font-medium">
+          <div className="col-span-2">
+            <div className="rounded-3xl p-4 bg-white shadow-lg text-center space-y-2 md:space-y-5">
+              <h1 className="text-[20px] md:text-4xl text-slate-900 font-medium">
                 Visit type and date
               </h1>
               <h2 className="text-gray-400">
                 Book your appointment day your life
               </h2>
-              <div className="bg-gray-200/80 rounded-full text-gray-400 flex justify-between px-4 py-2">
+              <div className="bg-gray-200/80 overflow-auto scrollbar-none rounded-full text-gray-400 flex justify-between px-4 py-2">
                 <button className="bg-white text-slate-900 font-medium rounded-full px-4 py-1 ">
                   General
                 </button>
@@ -121,9 +121,8 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        {/* ----------------- */}
         <div>
-          <div className="h-[100px] w-full swiper-container">
+          {/* <div className="h-[100px] w-full swiper-container">
             <Swiper
               direction={"horizontal"}
               loop={true}
@@ -150,9 +149,8 @@ const Banner = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </div> */}
         </div>
-        {/* -------------- */}
       </div>
     </section>
   );
