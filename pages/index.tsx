@@ -22,14 +22,14 @@ export default function Home() {
         {/* <main className="w-full container mx-auto text-[16px] h-screen font-bodyFont bg-white text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"> */}
         {/* <NavBar /> */}
         {/* <Banner /> */}
-        {/* <OurFeatures /> */}
-        <OurDoctors />
-        <Care />
+        <OurFeatures />
+        {/* <OurDoctors />
+        <Care /> */}
         {/*
         {/* <ClientQsts />
         <Testimonials /> */}
-        <OurApp />
-        <Footer />
+        {/* <OurApp />
+        <Footer /> */}
       </main>
     </>
   );

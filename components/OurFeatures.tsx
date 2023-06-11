@@ -6,11 +6,13 @@ const OurFeatures = () => {
   return (
     <section
       id="OurFeatures"
-      className="container space-y-6 text-slate-900 mx-auto px-9"
+      className="container space-y-4 text-slate-900 mx-auto px-9"
     >
-      <h1 className="text-5xl font-bold font-titleFont">Our Features</h1>
-      <div className="flex justify-between items-center">
-        <p className="text-gray-400 max-w-[50%]">
+      <h1 className="text-[30px] md:text-5xl font-bold font-titleFont">
+        Our Features
+      </h1>
+      <div className="grid grid-flow-col gap-1 grid-rows-2 md:grid-rows-1 items-center">
+        <p className="text-gray-400 lg:max-w-[50%]">
           We study lastest scientific achivements ins diagnosing health and
           implemnthing them at work.
         </p>
@@ -18,28 +20,28 @@ const OurFeatures = () => {
           Meet our experts
         </button>
       </div>
-      <div className="flex justify-between">
-        <div className="border gap-2 flex flex-col items-center max-w-[30%] border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
+      <div className="grid grid-rows-3 md:grid-rows-1 gap-3 grid-flow-col justify-between">
+        <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
           <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
-          <h2 className="text-[22px] font-bold font-titleFont">
+          <h2 className="md:text-[22px] font-bold font-titleFont">
             Diagnostic Examination
           </h2>
           <p className="text-center">
             Depending on the specific health concern being evaluated
           </p>
         </div>
-        <div className="border gap-2 flex flex-col items-center max-w-[30%] border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
+        <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
           <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
-          <h2 className="text-[22px] font-bold font-titleFont">
+          <h2 className="md:text-[22px] font-bold font-titleFont">
             Diagnostic Examination
           </h2>
           <p className="text-center">
             Depending on the specific health concern being evaluated
           </p>
         </div>
-        <div className="border gap-2 flex flex-col items-center max-w-[30%] border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
+        <div className="border gap-2 flex flex-col items-center border-gray-200 shadow bg-white/30 p-4 box-border rounded-xl">
           <Image src={diagnostic} alt="diagnostic" width={200} height={300} />
-          <h2 className="text-[22px] font-bold font-titleFont">
+          <h2 className="md:text-[22px] font-bold font-titleFont">
             Diagnostic Examination
           </h2>
           <p className="text-center">
