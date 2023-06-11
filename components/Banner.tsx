@@ -1,16 +1,19 @@
 import { appleStore, googlePlay } from "@/public";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import React from "react";
 import NavBar from "./NavBar";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+SwiperCore.use([Autoplay, Navigation]);
+
 import "swiper/css";
 import "swiper/css/pagination";
 
 const data_brand = [
-  // {
-  //   id: "logo-1",
-  //   link: "/public/images//appStore.png",
-  // },
+  {
+    id: "logo-1",
+    link: "/images/brands/sample-logo-3.svg",
+  },
   {
     id: "logo-2",
     link: "/images/brands/sample-logo-1.svg",
@@ -41,7 +44,7 @@ const Banner = () => {
       style={{ backgroundImage: `url('./images/bannerthree.jpg')` }}
     >
       <NavBar />
-      <div className="container mx-auto px-9">
+      <div className="container space-y-10 mx-auto px-9">
         <div className="grid gap-4 grid-rows-2 lg:grid-rows-1 grid-flow-col grid-cols-2 md:flex-row">
           <div className="col-span-2 space-y-6 md:space-y-10 text-white flex-1">
             <h1 className="font-titleFont md:text-[50px] lg:text-8xl text-[30px] font-bold">
@@ -121,35 +124,47 @@ const Banner = () => {
             </div>
           </div>
         </div>
-        <div>
-          {/* <div className="h-[100px] w-full swiper-container">
-            <Swiper
-              direction={"horizontal"}
-              loop={true}
-              spaceBetween={15}
-              slidesPerView={6}
-              simulateTouch={false}
-              autoplay={{
-                // enabled: true,
-                delay: 1,
-                disableOnInteraction: false,
-              }}
-              centerInsufficientSlides={true}
-              speed={2000}
-              className="swiper-wrapper w-full"
-            >
-              {data_brand.map((item) => (
-                <SwiperSlide key={item?.id} role="button">
-                  <div
-                    className="swiper-slide active"
-                    style={{ minWidth: 100 }}
-                  >
-                    <Image alt={item?.id} src={item?.link} fill />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div> */}
+        <div className="h-[100px] max-w-containerSmall mx-auto w-full swiper-container">
+          <Swiper
+            slidesPerView={6}
+            spaceBetween={15}
+            loop={true}
+            speed={3000}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            className="swiper-wrapper"
+            breakpoints={{
+              0: {
+                slidesPerView: 2,
+              },
+              400: {
+                slidesPerView: 4,
+              },
+              639: {
+                slidesPerView: 6,
+              },
+              865: {
+                slidesPerView: 6,
+              },
+            }}
+            pagination={true}
+            modules={[Pagination]}
+          >
+            {data_brand.map((item) => (
+              <SwiperSlide key={item?.id} role="button">
+                <div className="swiper-slide active">
+                  <Image
+                    width={300}
+                    height={300}
+                    alt={item?.id}
+                    src={item?.link}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
