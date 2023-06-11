@@ -3,45 +3,45 @@ import React from "react";
 
 const Care = () => {
   return (
-    <section className="container space-y-8 text-slate-900 mx-auto  px-9">
+    <section className="container overflow-hidden space-y-8 text-slate-900 mx-auto  px-9">
       <div className="flex flex-col place-items-center">
-        <h1 className="text-5xl text-sm-5xl font-bold font-titleFont">
+        <h1 className="text-[30px] md:text-5xl text-sm-5xl font-bold font-titleFont">
           We care about you condition
         </h1>
       </div>
       <div className="space-y-2">
-        <div className="flex h-[120px] gap-4">
+        <div className="grid grid-flow-col grid-rows-2 md:grid-rows-1 grid-cols-5 gap-4">
           <div
             style={{ backgroundImage: `url('./images/bgone.jpg')` }}
-            className="w-[40%] px-2 space-y-2 space-x-2 flex-warp box-border bg-cyan-700 rounded-lg bg-cover bg-no-repeat"
+            className="col-span-5 md:col-span-2 p-4 grid grid-flow-col grid-rows-3 lg:grid-rows-2 lg:grid-cols-3 gap-2 box-border bg-cyan-700 rounded-3xl bg-cover bg-no-repeat"
           >
-            <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
+            <button className="inline-block text-white rounded-full shadow-sm text-1xl font-medium border py-2">
               General
             </button>
-            <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
-              Surgery
-            </button>
-            <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
+            <button className="inline-block text-white rounded-full shadow-sm text-1xl font-medium border py-2">
               Diagnosis
             </button>
-            <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
+            <button className="inline-block text-white rounded-full shadow-sm text-1xl font-medium border py-2">
               Therapy
             </button>
-            <button className="inline-block text-white h-12 rounded-full shadow-sm text-1xl font-medium border px-8 py-3">
+            <button className="inline-block text-white rounded-full shadow-sm text-1xl font-medium border py-2">
+              Surgery
+            </button>
+            <button className="inline-block text-white rounded-full shadow-sm text-1xl font-medium border py-2">
               Health
             </button>
           </div>
           <div
             style={{ backgroundImage: `url('./images/bannerthree.jpg')` }}
-            className="grid w-[60%] bg-cover bg-no-repeat place-content-center rounded-lg box-border"
+            className="grid col-span-5 md:col-span-3 p-4 bg-cover bg-no-repeat place-content-center rounded-3xl box-border"
           >
-            <h1 className="text-3xl text-sm-5xl text-white font-bold font-titleFont">
+            <h1 className="text-[22px] md:text-3xl text-sm-5xl text-white font-bold font-titleFont">
               #WeCareAboutYou
             </h1>
           </div>
         </div>
-        <div className="flex box-border justify-between gap-4">
-          <div className="flex flex-col justify-between gap-5 p-10 text-white w-[25%] bg-blue-400 rounded-3xl">
+        <div className="grid grid-flow-col md:grid-flow-row grid-rows-3 md:grid-rows-2 lg:grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 box-border gap-4">
+          <div className="flex flex-col justify-between gap-5 p-10 text-white bg-blue-400 rounded-3xl">
             <div className="text-5xl font-medium">50%</div>
             <p className="text-[14px] text-gray-200">
               Take a discount for a child under 6 years of age, for first
@@ -51,7 +51,7 @@ const Care = () => {
               Get discount
             </button>
           </div>
-          <div className="flex flex-col justify-between gap-5 p-10 text-white w-[25%] bg-green-400 rounded-3xl">
+          <div className="flex flex-col justify-between gap-5 p-10 text-white bg-green-400 rounded-3xl">
             <div className="text-5xl font-medium">25%</div>
             <p className="text-[14px] text-gray-200">
               Take a discount for the first visit of an our services
@@ -60,7 +60,7 @@ const Care = () => {
               Get discount
             </button>
           </div>
-          <div className="w-[50%] bg-gray-200/50 relative rounded-3xl">
+          <div className="md:col-span-2 bg-gray-200/50 relative rounded-3xl">
             <div>
               <Image
                 alt=""

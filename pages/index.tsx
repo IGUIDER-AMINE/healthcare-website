@@ -18,15 +18,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.ico" />
       </Head>
-      <main className="w-full overflow-hidden flex flex-col gap-24 justify-between text-[16px] font-bodyFont bg-white text-textLight">
+      <main className="w-full overflow-hidden flex flex-col gap-24 justify-between text-[16px] font-bodyFont bg-white text-textLight  ">
         {/* <main className="w-full container mx-auto text-[16px] h-screen font-bodyFont bg-white text-textLight overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60"> */}
         {/* <NavBar /> */}
-        {/* <Banner />
-        <OurFeatures />
-        <OurDoctors />
+        {/* <Banner /> */}
+        {/* <OurFeatures /> */}
+        {/* <OurDoctors /> */}
         <Care />
-        <ClientQsts />
-        <Testimonials />*/}
+        {/*
+        {/* <ClientQsts />
+        <Testimonials /> */}
         <OurApp />
         <Footer />
       </main>
