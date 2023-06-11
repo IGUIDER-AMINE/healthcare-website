@@ -4,11 +4,11 @@ import React from "react";
 
 const OurApp = () => {
   return (
-    <section id="ourApp" className="container mx-auto px-9">
-      <div className="bg-cyan-500 flex rounded-3xl h-[300px]">
-        <div className="flex-1 pl-24 grid space-y-5 place-content-center justify-start flex-col">
-          <h1 className="text-5xl text-white font-titleFont font-bold">
-            Trust us, it will all <br /> look much easier
+    <section id="ourApp" className="container overflow-hidden mx-auto px-9">
+      <div className="bg-cyan-500 flex rounded-3xl h-auto md:h-[300px]">
+        <div className="flex-1 p-5 md:pl-24 grid space-y-5 place-content-center justify-start flex-col">
+          <h1 className="text-[30px] lg:text-5xl text-white font-titleFont font-bold">
+            Trust us, it will all look much easier
           </h1>
           <div className="flex gap-5">
             <div>
@@ -31,11 +31,11 @@ const OurApp = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 grid place-content-center relative">
+        <div className="flex-none md:flex-1 grid place-content-center relative">
           <Image
             src={ourApp}
             alt="out-app"
-            className="object-contain h-full absolute bottom-0 right-[-10px]"
+            className="object-contain h-full absolute bottom-[-60px] lg:bottom-0 lg:right-[-10px]"
             width={400}
             height={300}
           />

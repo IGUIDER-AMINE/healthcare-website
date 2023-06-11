@@ -26,8 +26,8 @@ export default function Home() {
         <OurDoctors />
         <Care />
         <ClientQsts />
-        <Testimonials />
-        <OurApp /> */}
+        <Testimonials />*/}
+        <OurApp />
         <Footer />
       </main>
     </>
