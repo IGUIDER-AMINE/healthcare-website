@@ -23,13 +23,13 @@ export default function Home() {
         {/* <NavBar /> */}
         {/* <Banner /> */}
         <OurFeatures />
-        {/* <OurDoctors />
-        <Care /> */}
+        <OurDoctors />
+        <Care />
         {/*
         {/* <ClientQsts />
         <Testimonials /> */}
-        {/* <OurApp />
-        <Footer /> */}
+        <OurApp />
+        <Footer />
       </main>
     </>
   );
