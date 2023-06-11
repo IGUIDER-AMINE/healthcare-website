@@ -15,7 +15,7 @@ const OurApp = () => {
               <Image
                 src={appleStore}
                 alt="out-app"
-                className="object-cover"
+                className="object-cover w-auto"
                 width={145}
                 height={100}
               />
@@ -24,7 +24,7 @@ const OurApp = () => {
               <Image
                 src={googlePlay}
                 alt="out-app"
-                className="object-cover"
+                className="object-cover w-auto"
                 width={145}
                 height={50}
               />
@@ -35,7 +35,7 @@ const OurApp = () => {
           <Image
             src={ourApp}
             alt="out-app"
-            className="object-contain h-full absolute bottom-[-60px] lg:bottom-0 lg:right-[-10px]"
+            className="object-contain h-full w-auto absolute bottom-[-60px] lg:bottom-0 lg:right-[-10px]"
             width={400}
             height={300}
           />
