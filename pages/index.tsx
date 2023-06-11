@@ -23,7 +23,7 @@ export default function Home() {
         {/* <NavBar /> */}
         {/* <Banner /> */}
         {/* <OurFeatures /> */}
-        {/* <OurDoctors /> */}
+        <OurDoctors />
         <Care />
         {/*
         {/* <ClientQsts />
